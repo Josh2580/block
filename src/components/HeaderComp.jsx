@@ -14,7 +14,7 @@ const HeaderComp = ({ visible }) => {
       <div className="flex gap-3">
         <h3
           onClick={() => ClickHandler("/")}
-          className=" font-extrabold text-2xl text-blue-950 "
+          className=" font-extrabold text-xl text-blue-950 "
         >
           BLOCKMECH
         </h3>

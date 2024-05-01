@@ -12,7 +12,7 @@ const HomePage = () => {
 
   return (
     <div className="h-svh flex flex-col gap-4 justify-between bg-white">
-      <div className="m-3 mx-6 flex gap-4 flex-col h-full ">
+      <div className="m-3 mx-8 flex gap-4 flex-col h-full ">
         <HeaderComp />
 
         <MyWallet address={address} balance={balance} />

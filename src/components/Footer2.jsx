@@ -21,7 +21,7 @@ const Footer2 = () => {
         <p className="text-xs font-bold text-gray-700">Home</p>
       </div>
       <div
-        onClick={() => NavHandler("/")}
+        onClick={() => NavHandler("/send")}
         className="card-col bg-transparent  gap-0 p-0 "
       >
         <CgArrowUp size={25} className="text-gray-900" />

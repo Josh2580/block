@@ -10,8 +10,8 @@ const MyWallet = ({ address, balance }) => {
   const [copied, setCopied] = useState(false);
   const navigate = useNavigate();
 
-  const ClaimHandler = (path) => {
-    navigate(path);
+  const NavHandler = (to) => {
+    navigate(to);
   };
 
   const handleCopy = () => {
@@ -41,7 +41,10 @@ const MyWallet = ({ address, balance }) => {
         </div>
       </div>
       <div className=" flex justify-between">
-        <span className="p-0 m-0  flex flex-col items-center gap-1 ">
+        <span
+          onClick={() => NavHandler("/send")}
+          className="p-0 m-0  flex flex-col items-center gap-1 "
+        >
           <CgArrowUp
             size={40}
             className="bg-gray-300 text-gray-900 rounded-full p-1.5"

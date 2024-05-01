@@ -9,9 +9,14 @@ const HeaderComp = ({ visible }) => {
     navigate(path);
   };
 
+  const NavHandler = () => {
+    navigate(-1);
+  };
+
   return (
     <div className=" card-row ">
-      <div className="flex gap-3">
+      <div className="flex gap-3 items-center justify-center">
+        {visible && <IoIosArrowBack onClick={() => NavHandler()} />}
         <h3
           onClick={() => ClickHandler("/")}
           className=" font-extrabold text-xl text-blue-950 "

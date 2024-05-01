@@ -21,21 +21,21 @@ const Footer2 = () => {
         <p className="text-xs font-bold text-gray-700">Home</p>
       </div>
       <div
-        onClick={() => NavHandler("/send")}
+        onClick={() => NavHandler("/")}
         className="card-col bg-transparent  gap-0 p-0 "
       >
         <CgArrowUp size={25} className="text-gray-900" />
         <p className="text-xs font-bold text-gray-700">Send</p>
       </div>
       <div
-        onClick={() => NavHandler("/receive")}
+        onClick={() => NavHandler("/")}
         className="card-col bg-transparent  gap-0 p-0 "
       >
         <CgArrowDown size={25} className="text-gray-900" />
         <p className="text-xs font-bold text-gray-700">Receive</p>
       </div>
       <div
-        onClick={() => NavHandler("/swap")}
+        onClick={() => NavHandler("/")}
         className="card-col bg-transparent  gap-0 p-0 "
       >
         <LuArrowDownUp size={25} className="text-gray-900" />

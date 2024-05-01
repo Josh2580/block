@@ -19,12 +19,12 @@ const HeaderComp = ({ visible }) => {
           BLOCKMECH
         </h3>
       </div>
-      <button
+      {/* <button
         className="primary-btn"
         onClick={() => ClickHandler("/connect-wallet")}
       >
         Connect Wallet
-      </button>
+      </button> */}
     </div>
   );
 };

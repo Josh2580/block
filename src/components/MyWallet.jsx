@@ -25,7 +25,7 @@ const MyWallet = ({ address, balance }) => {
   };
 
   return (
-    <div className=" flex flex-col gap-5 bg-gray-200 p-6 rounded-lg">
+    <div className=" flex flex-col gap-5 bg-gray-100 p-6 rounded-lg">
       <div>
         <div className=" flex justify-center">
           <span className="p-0 m-0 text-2xl font-bold text-gray-700">

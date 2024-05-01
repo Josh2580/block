@@ -19,9 +19,11 @@ const HomePage = () => {
 
   return (
     <div className="h-svh flex flex-col gap-4 justify-between bg-white">
-      <div className="m-3  flex gap-4 flex-col h-full ">
+      <div className="mt-3 ml-3">
         <HeaderComp />
+      </div>
 
+      <div className="m-3  flex gap-4 flex-col h-full ">
         <MyWallet address={address} balance={balance} />
 
         {coin.map((data, idx) => (

@@ -28,7 +28,7 @@ const Footer2 = () => {
         <p className="text-xs font-bold text-gray-700">Send</p>
       </div>
       <div
-        onClick={() => NavHandler("/")}
+        onClick={() => NavHandler("/receive")}
         className="card-col bg-transparent  gap-0 p-0 "
       >
         <CgArrowDown size={25} className="text-gray-900" />

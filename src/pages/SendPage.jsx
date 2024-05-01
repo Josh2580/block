@@ -45,6 +45,9 @@ const SendPage = () => {
 
   return (
     <div className="h-svh flex flex-col gap-4 justify-between bg-white">
+      <div className="mt-3 ml-3">
+        <HeaderComp visible={true} />
+      </div>
       <ToastContainer
         position="top-center"
         autoClose={5000}
@@ -58,7 +61,7 @@ const SendPage = () => {
         theme="light"
       />
       <div className="m-3  flex gap-4 flex-col h-full ">
-        <HeaderComp visible={true} />
+        {/* <HeaderComp visible={true} /> */}
         <form
           onSubmit={sendHandler}
           className="flex flex-col justify-between h-full gap-5"

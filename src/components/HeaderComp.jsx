@@ -5,24 +5,19 @@ import { IoIosArrowBack } from "react-icons/io";
 
 const HeaderComp = ({ visible }) => {
   const navigate = useNavigate();
-
   const ClickHandler = (path) => {
     navigate(path);
-  };
-  const NavHandler = () => {
-    navigate(-1);
   };
 
   return (
     <div className=" card-row ">
       <div className="flex gap-3">
-        {visible && <IoIosArrowBack size={20} onClick={() => NavHandler()} />}
-        <img
-          src={LogoImg}
-          className="logo-img"
-          alt="Logo Images"
-          onClick={() => ClickHandler("/home")}
-        />
+        <h3
+          onClick={() => ClickHandler("/")}
+          className=" font-extrabold text-2xl text-blue-950 "
+        >
+          BLOCKMECH
+        </h3>
       </div>
       <button
         className="primary-btn"
